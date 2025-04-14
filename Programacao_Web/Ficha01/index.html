@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindos</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1 style="color: rgb(218, 18, 98); font-weight: bold;"">Bem-Vindos!</h1>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Secção sobre mim -->
+        <section id="sobre">
+            <h2 style="color: rgb(56, 209, 166)"">Sobre Mim</h2>
+            <p>
+                Olá <br>
+                O meu nome é <b>Alexandra Torres</b>, <br>
+                Tive o primeiro contacto com programação na Universidade <br>
+                e mais tarde quando participei num projeto de investigação utilizando "machine learning" achei super interessante e resolvi inscrever-me no mestrado de Engenharia Informática no ISEP. <br>
+                Como as minhas bases de programação eram muito escassas, senti muita dificuldade no curso e comecei a procurar soluções para melhorar as minhas skills e assim facilitar a minha aprendizagem no mestrado! <br>
+                E agora estou aqui no curso de Software Developer!
+            </p>
+
+            <img src="imagens/Alexandra-London.jpg" alt="Imagem da Alexandra" width="300">
+        </section>
+
+        <!-- Secção de interesses -->
+        <section id="interesses">
+            <h2 style="color: rgb(97, 120, 220)"">Estes são alguns dos meus interesses:</h2>
+            <ul>
+                <li style="list-style-type: circle;">HTML</li>
+                <li style="list-style-type: circle;">CSS</li>
+                <li style="list-style-type: circle;">JS</li>
+                <li style="list-style-type: circle;">Bootstrap</li>
+                <li style="list-style-type: circle;">SQL</li>
+                <li style="list-style-type: circle;">Java</li>
+            </ul>
+        </section>
+
+        <!-- Link externo -->
+        <section id="links">
+            <a href="https://alexandratorres.pt/" target="_blank" style="color: rgb(198, 18, 218); font-weight: bold;"> Clica aqui para saber mais!</a>
+        </section>
+
+        <!-- Secção multimédia -->
+        <section id="multimedia">
+            <h2 style="color: rgb(18, 185, 232)"">Vídeo</h2>
+            <!-- A tag <video> precisa de ficheiro .mp4. YouTube não é suportado diretamente -->
+            <p>Este vídeo faz uma breve introdução ao HTML 😄</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0?start=60" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Tabela de formação ou experiência -->
+        <section id="formacao">
+            <h2 style="color: rgb(232, 111, 18)"">Formação Académica</h2>
+            <table border="1">
+                <tr>
+                    <th style="color: rgb(18, 232, 57)"">Curso</th>
+                    <th style="color: rgb(232, 204, 18)"">Instituição</th>
+                </tr>
+                <tr>
+                    <td>Licenciatura em Bioengenharia</td>
+                    <td>UTAD</td>
+                </tr>
+                <tr>
+                    <td>Mestrado em Engenharia Informática</td>
+                    <td>ISEP</td>
+                </tr>
+                <tr>
+                    <td>Curso UI/UX development</td>
+                    <td>CESAE Digital</td>
+                </tr>
+                <tr>
+                    <td>Curso Software Developer</td>
+                    <td>CESAE Digital</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formulário de contacto -->
+        <section id="contacto">
+            <h2 style="color: rgb(232, 50, 18)"">Formulário de Contacto</h2>
+            <form action="processa.php" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="Nome" placeholder="Escreva aqui o seu nome." required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="emailform" placeholder="Escreva aqui o seu email." required><br><br>
+
+                <label for="mensagem">A sua mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="30" placeholder="Escreva aqui a sua mensagem..." required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Alexandra Torres</p>
+    </footer>
+
+</body>
+</html>
