@@ -4,65 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-Vindos</title>
+
+    <!-- Ligação ao ficheiro CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com menu de navegação -->
     <header>
-        <h1 style="color: rgb(218, 18, 98); font-weight: bold;"">Bem-Vindos!</h1>
+        <nav>
+            <ul>
+                <li><a href="./sobrenos.html">Sobre Mim</a></li>
+                <li><a href="./Servicos.html">Interesses</a></li>
+                <li><a href="./Servicos.html">Formação</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Conteúdo principal -->
+    <!-- Conteúdo principal da página -->
     <main>
 
-        <!-- Secção sobre mim -->
+        <!-- Secção: Sobre Mim -->
         <section id="sobre">
-            <h2 style="color: rgb(56, 209, 166)"">Sobre Mim</h2>
+            <h1>Sobre Mim</h1>
             <p>
-                Olá <br>
-                O meu nome é <b>Alexandra Torres</b>, <br>
-                Tive o primeiro contacto com programação na Universidade <br>
-                e mais tarde quando participei num projeto de investigação onde utilizei "machine learning" e achei muito interessante e resolvi inscrever-me no mestrado de Engenharia Informática no ISEP para mergulhar no mundo da programação. <br>
-                Como as minhas bases de programação eram muito escassas, senti muita dificuldade no curso e comecei a procurar soluções para melhorar as minhas skills e assim facilitar a minha aprendizagem no mestrado! <br>
+                <h3>Olá!</h3><br>
+                O meu nome é Alexandra Torres e vou falar um pouco sobre o meu percurso no mundo da programação.
+                Tive o primeiro contacto com programação na Universidade e mais tarde quando participei num projeto de investigação onde utilizei "machine learning" e achei muito interessante e resolvi inscrever-me no mestrado de Engenharia Informática no ISEP para mergulhar no mundo da programação. Como as minhas bases de programação eram muito escassas, senti muita dificuldade no curso e comecei a procurar soluções para melhorar as minhas skills e assim facilitar a minha aprendizagem no mestrado!
                 E agora estou aqui no curso de Software Developer!
             </p>
 
+            <!-- Imagem pessoal -->
             <img src="imagens/Alexandra-London.jpg" alt="Imagem da Alexandra" width="300">
         </section>
 
-        <!-- Secção de interesses -->
+        <!-- Secção: Interesses -->
         <section id="interesses">
-            <h2 style="color: rgb(97, 120, 220)"">Estes são alguns dos meus interesses:</h2>
-            <ul>
-                <li style="list-style-type: circle;">HTML</li>
-                <li style="list-style-type: circle;">CSS</li>
-                <li style="list-style-type: circle;">JS</li>
-                <li style="list-style-type: circle;">Bootstrap</li>
-                <li style="list-style-type: circle;">SQL</li>
-                <li style="list-style-type: circle;">Java</li>
+            <h2>Estes são alguns dos meus interesses:</h2>
+            <ul class="lista-interesses">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Bootstrap</li>
+                <li>SQL</li>
+                <li>Java</li>
             </ul>
         </section>
 
-        <!-- Link externo -->
+        <!-- Secção: Link externo -->
         <section id="links">
-            <a href="https://alexandratorres.pt/" target="_blank" style="color: rgb(198, 18, 218); font-weight: bold;"> Clica aqui para saber mais!</a>
+            <a href="https://alexandratorres.pt/" target="_blank">Clica aqui para saber mais!</a>
         </section>
 
-        <!-- Secção multimédia -->
+        <!-- Secção: Vídeo -->
         <section id="multimedia">
-            <h2 style="color: rgb(18, 185, 232)"">Vídeo</h2>
-            <!-- A tag <video> precisa de ficheiro .mp4. YouTube não é suportado diretamente -->
+            <h2>Vídeo</h2>
             <p>Este vídeo faz uma breve introdução ao HTML 😄</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5Hn58p-hYC0?start=60" frameborder="0" allowfullscreen></iframe>
         </section>
 
-        <!-- Tabela de formação ou experiência -->
+        <!-- Secção: Formação Académica -->
         <section id="formacao">
-            <h2 style="color: rgb(232, 111, 18)"">Formação Académica</h2>
+            <h2>Formação Académica</h2>
             <table border="1">
                 <tr>
-                    <th style="color: rgb(18, 232, 57)"">Curso</th>
-                    <th style="color: rgb(232, 204, 18)"">Instituição</th>
+                    <th>Curso</th>
+                    <th>Instituição</th>
                 </tr>
                 <tr>
                     <td>Licenciatura em Bioengenharia</td>
@@ -83,9 +91,9 @@
             </table>
         </section>
 
-        <!-- Formulário de contacto -->
+        <!-- Secção: Formulário de contacto -->
         <section id="contacto">
-            <h2 style="color: rgb(232, 50, 18)"">Formulário de Contacto</h2>
+            <h2>Formulário de Contacto</h2>
             <form action="processa.php" method="post">
                 <label for="nome">Nome:</label><br>
                 <input type="text" id="nome" name="Nome" placeholder="Escreva aqui o seu nome." required><br><br>
@@ -99,6 +107,18 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
+
+        <section class="galeria">
+            <div class="imagem-container">
+              <img src="imagens/pastel-easter.jpg" alt="Imagem Pastel Easter">
+            </div>
+            <div class="imagem-container">
+              <img src="imagens/pastel-easter.jpg" alt="Imagem Pastel Easter">
+            </div>
+            <div class="imagem-container">
+              <img src="imagens/pastel-easter.jpg" alt="Imagem Pastel Easter">
+            </div>
+          </section>
 
     </main>
 
